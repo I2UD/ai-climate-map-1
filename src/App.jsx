@@ -27,8 +27,9 @@ const terrainProvider = new CesiumTerrainProvider({
 });
 
 const bingProvider = new BingMapsImageryProvider({
-  url: "https://dev.virtualearth.net",
-  key: import.meta.env.VITE_APP_BINGMAPS_KEY,
+  url: "https://atlas.microsoft.com",
+  key: import.meta.env.VITE_APP_AZUREMAPS_KEY,
+  mapStyle: BingMapsImageryProvider.Style.AERIAL_WITH_LABELS,
 });
 
 const osmProvider = new OpenStreetMapImageryProvider({
